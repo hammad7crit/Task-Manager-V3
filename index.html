@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClearFocus</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" crossorigin="anonymous" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+        body { font-family: "Outfit"; }
+    </style>
+</head>
+<body class="min-h-screen bg-gray-900 text-white">
+
+    <!-- Navbar -->
+    <nav class="flex justify-between items-center p-6">
+        <h1 class="text-2xl font-bold text-purple-400">ClearFocus</h1>
+        <ul class="flex gap-6 text-white font-medium">
+            <li class="transition duration-300 hover:scale-105 cursor-pointer">Home</li>
+            <li class="transition duration-300 hover:scale-105 cursor-pointer">FAQ</li>
+            <li class="transition duration-300 hover:scale-105 cursor-pointer">Sign In</li>
+            <li class="transition duration-300 hover:scale-105 cursor-pointer">Sign Up</li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="w-full h-80 bg-gradient-to-r from-gray-800 via-purple-900 to-indigo-900 flex flex-col justify-center items-center gap-6 rounded-2xl p-6 shadow-lg">
+        <h1 class="text-4xl sm:text-5xl font-bold text-white text-center">Boost Your Productivity</h1>
+        <p class="text-gray-300 text-center max-w-xl text-lg sm:text-xl">Organize tasks, manage time, and achieve your goals with a sleek, modern interface designed to keep you motivated.</p>
+        <a href="content.html" class="mt-4 bg-purple-600 hover:bg-purple-700 px-6 py-3 rounded-2xl font-bold text-white transition duration-300 hover:scale-105 shadow-lg">Get Started</a>
+    </section>
+
+    <!-- Features Section -->
+    <section class="p-8">
+        <h1 class="text-4xl font-bold text-center text-white mb-12">Why Choose Us?</h1>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-8 justify-center">
+            <div class="bg-gray-800/50 border border-purple-600 rounded-2xl p-6 shadow-lg hover:scale-105 transition duration-300">
+                <h2 class="text-2xl font-bold mb-4 text-purple-400"><i class="fa-solid fa-list-check mr-2"></i>Task Management</h2>
+                <p class="text-gray-300">Easily create, track, and complete tasks with our intuitive interface. Stay organized and productive every day.</p>
+            </div>
+            <div class="bg-gray-800/50 border border-purple-600 rounded-2xl p-6 shadow-lg hover:scale-105 transition duration-300">
+                <h2 class="text-2xl font-bold mb-4 text-purple-400"><i class="fa-solid fa-fire mr-2"></i>Streak System</h2>
+                <p class="text-gray-300">Build momentum and stay motivated by maintaining streaks for completing tasks consistently.</p>
+            </div>
+            <div class="bg-gray-800/50 border border-purple-600 rounded-2xl p-6 shadow-lg hover:scale-105 transition duration-300">
+                <h2 class="text-2xl font-bold mb-4 text-purple-400"><i class="fa-solid fa-gift mr-2"></i>Reward System</h2>
+                <p class="text-gray-300">Stay motivated by earning points, badges, and rewards each time you complete tasks. Celebrate your achievements!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800/50 border-t border-purple-600 p-6 text-center text-gray-400 mt-12">
+        &copy; 2025 ClearFocus. All rights reserved.
+    </footer>
+
+</body>
+</html>
