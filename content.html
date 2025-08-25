@@ -11,88 +11,99 @@
     body { font-family: "Outfit"; }
   </style>
 </head>
-<body class="w-full min-h-screen bg-gray-900 text-white p-6 flex gap-6">
+<body class="w-full min-h-screen bg-gray-900 text-white p-4 sm:p-6 flex flex-col lg:flex-row gap-6 overflow-x-hidden">
 
   <!-- Left Section -->
-  <section class="flex flex-col gap-6 w-2/3" id="leftsection">
+  <section class="flex flex-col gap-6 w-full lg:w-2/3" id="leftsection">
     <div class="flex flex-wrap gap-6 bg-gray-800/50 p-6 rounded-2xl shadow-lg">
       <div class="flex flex-col gap-2 w-full sm:w-1/2">
         <h1 class="font-bold text-lg sm:text-xl">Add a new task</h1>
-        <input type="text" placeholder="Task name" class="bg-gray-900 border border-purple-600 rounded-2xl px-4 py-2 focus:ring-2 focus:ring-purple-500 outline-none text-sm sm:text-base" id="tasknameMain"/>
+        <input type="text" placeholder="Task name" 
+          class="bg-gray-900 border border-purple-600 rounded-2xl px-4 py-2 focus:ring-2 focus:ring-purple-500 outline-none text-sm sm:text-base w-full" 
+          id="tasknameMain"/>
       </div>
 
       <div class="flex flex-col gap-2 w-full sm:w-1/2">
         <label for="category" class="font-bold text-lg sm:text-xl">Task Category</label>
-        <select id="category" class="bg-gray-900 border border-purple-600 rounded-2xl px-4 py-2 text-sm sm:text-base">
-          <option value="meeting" class="text-white">Meeting</option>
-          <option value="project" class="text-white">Project</option>
-          <option value="deadline" class="text-white">Deadline</option>
-          <option value="report" class="text-white">Report</option>
-          <option value="email" class="text-white">Email</option>
-          <option value="shopping" class="text-white">Shopping</option>
-          <option value="errand" class="text-white">Errand</option>
-          <option value="health_fitness" class="text-white">Health/Fitness</option>
-          <option value="hobby" class="text-white">Hobby</option>
-          <option value="travel" class="text-white">Travel/Trip</option>
-          <option value="urgent" class="text-white">Urgent</option>
-          <option value="high_priority" class="text-white">High Priority</option>
-          <option value="medium_priority" class="text-white">Medium Priority</option>
-          <option value="low_priority" class="text-white">Low Priority</option>
-          <option value="study" class="text-white">Study</option>
-          <option value="reading" class="text-white">Reading</option>
-          <option value="course" class="text-white">Course</option>
-          <option value="practice" class="text-white">Practice</option>
-          <option value="social" class="text-white">Social</option>
-          <option value="chores" class="text-white">Chores</option>
-          <option value="entertainment" class="text-white">Entertainment</option>
-          <option value="creative" class="text-white">Creative</option>
-          <option value="random" class="text-white">Random</option>
+        <select id="category" 
+          class="bg-gray-900 border border-purple-600 rounded-2xl px-4 py-2 text-sm sm:text-base w-full">
+          <option value="meeting">Meeting</option>
+          <option value="project">Project</option>
+          <option value="deadline">Deadline</option>
+          <option value="report">Report</option>
+          <option value="email">Email</option>
+          <option value="shopping">Shopping</option>
+          <option value="errand">Errand</option>
+          <option value="health_fitness">Health/Fitness</option>
+          <option value="hobby">Hobby</option>
+          <option value="travel">Travel/Trip</option>
+          <option value="urgent">Urgent</option>
+          <option value="high_priority">High Priority</option>
+          <option value="medium_priority">Medium Priority</option>
+          <option value="low_priority">Low Priority</option>
+          <option value="study">Study</option>
+          <option value="reading">Reading</option>
+          <option value="course">Course</option>
+          <option value="practice">Practice</option>
+          <option value="social">Social</option>
+          <option value="chores">Chores</option>
+          <option value="entertainment">Entertainment</option>
+          <option value="creative">Creative</option>
+          <option value="random">Random</option>
         </select>
       </div>
 
       <div class="flex flex-col gap-2 w-full sm:w-1/2">
         <label for="priority" class="font-bold text-lg sm:text-xl">Priority</label>
-        <select id="priority" class="bg-gray-900 border border-purple-600 rounded-2xl px-4 py-2 text-sm sm:text-base">
-          <option value="low_priority" class="text-white">Low Priority</option>
-          <option value="med_priority" class="text-white">Medium Priority</option>
-          <option value="high_priority" class="text-white">High Priority</option>
+        <select id="priority" 
+          class="bg-gray-900 border border-purple-600 rounded-2xl px-4 py-2 text-sm sm:text-base w-full">
+          <option value="low_priority">Low Priority</option>
+          <option value="med_priority">Medium Priority</option>
+          <option value="high_priority">High Priority</option>
         </select>
       </div>
 
       <div class="flex flex-col gap-2 w-full sm:w-1/2">
         <label for="time" class="font-bold text-lg sm:text-xl">Finish in</label>
-        <select id="time" class="bg-gray-900 border border-purple-600 rounded-2xl px-4 py-2 text-sm sm:text-base">
-          <option value="1day" class="text-white">1 Day</option>
-          <option value="2days" class="text-white">2 Days</option>
-          <option value="3days" class="text-white">3 Days</option>
-          <option value="4days" class="text-white">4 Days</option>
-          <option value="5days" class="text-white">5 Days</option>
-          <option value="6days" class="text-white">6 Days</option>
-          <option value="7days" class="text-white">7 Days</option>
+        <select id="time" 
+          class="bg-gray-900 border border-purple-600 rounded-2xl px-4 py-2 text-sm sm:text-base w-full">
+          <option value="1day">1 Day</option>
+          <option value="2days">2 Days</option>
+          <option value="3days">3 Days</option>
+          <option value="4days">4 Days</option>
+          <option value="5days">5 Days</option>
+          <option value="6days">6 Days</option>
+          <option value="7days">7 Days</option>
         </select>
       </div>
     </div>
 
     <div class="flex flex-col gap-2 bg-gray-800/50 p-6 rounded-2xl shadow-lg">
       <h1 class="font-bold text-lg sm:text-xl">Description</h1>
-      <textarea rows="5" placeholder="Task description" class="resize-none bg-gray-900 border border-purple-600 rounded-2xl px-4 py-2 text-sm sm:text-base focus:ring-2 focus:ring-purple-500 outline-none" id="taskdescMain"></textarea>
+      <textarea rows="5" placeholder="Task description" 
+        class="resize-none bg-gray-900 border border-purple-600 rounded-2xl px-4 py-2 text-sm sm:text-base focus:ring-2 focus:ring-purple-500 outline-none w-full" 
+        id="taskdescMain"></textarea>
     </div>
-    <button class="bg-purple-600 hover:bg-purple-700 py-3 rounded-3xl" id="addtaskBtn">Create</button>
+
+    <button class="bg-purple-600 hover:bg-purple-700 py-3 rounded-3xl w-full sm:w-auto px-6">Create</button>
+
     <div class="bg-[#18212F] rounded-2xl h-auto p-6" id="tasksBox">
       <p class="font-bold text-lg">Your Tasks</p>
     </div>
   </section>
 
   <!-- Right Sidebar -->
-  <aside class="w-1/3 flex flex-col gap-6">
+  <aside class="w-full lg:w-1/3 flex flex-col gap-6">
 
     <!-- Streak Tracker -->
     <div class="bg-gray-800/50 border border-purple-600 rounded-2xl p-6 shadow-lg">
       <h2 class="text-xl font-bold mb-4 flex items-center gap-2">
         <i class="fa-solid fa-fire text-orange-400"></i> Streak Tracker
       </h2>
-      <p class="text-sm text-gray-300">You are on a <span class="font-bold text-purple-400" id="streaktext">0-day streak!</span></p>
-      <div class="flex gap-2 mt-4">
+      <p class="text-sm text-gray-300">
+        You are on a <span class="font-bold text-purple-400" id="streaktext">0-day streak!</span>
+      </p>
+      <div class="flex gap-2 mt-4 flex-wrap">
         <div class="h-3 w-10 bg-gray-700 rounded" id="streak1"></div>
         <div class="h-3 w-10 bg-gray-700 rounded" id="streak2"></div>
         <div class="h-3 w-10 bg-gray-700 rounded" id="streak3"></div>
@@ -109,18 +120,10 @@
         <i class="fa-solid fa-gift text-green-400"></i> Rewards
       </h2>
       <ul class="flex flex-col gap-3 text-sm">
-        <li class="flex justify-between">
-          <span>Complete 3 tasks</span> <span class="text-green-400">+10 XP</span>
-        </li>
-        <li class="flex justify-between">
-          <span>Maintain 7-day streak</span> <span class="text-green-400">+50 XP</span>
-        </li>
-        <li class="flex justify-between">
-          <span>Finish a high priority task</span> <span class="text-green-400">+20 XP</span>
-        </li>
-        <li class="flex justify-between">
-          <span>Complete all tasks today</span> <span class="text-green-400">+30 XP</span>
-        </li>
+        <li class="flex justify-between"><span>Complete 3 tasks</span> <span class="text-green-400">+10 XP</span></li>
+        <li class="flex justify-between"><span>Maintain 7-day streak</span> <span class="text-green-400">+50 XP</span></li>
+        <li class="flex justify-between"><span>Finish a high priority task</span> <span class="text-green-400">+20 XP</span></li>
+        <li class="flex justify-between"><span>Complete all tasks today</span> <span class="text-green-400">+30 XP</span></li>
       </ul>
       <div class="mt-4">
         <p class="text-sm text-gray-300 mb-2">Your Progress</p>
